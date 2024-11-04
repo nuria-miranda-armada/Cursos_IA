@@ -21,9 +21,13 @@ Para poder realizar web scraping lo que hacemos es:
 
 - Un **servicio web** es una tecnologia que utiliza un conjunto de protocolos y estándares web que sirven para intercambiar datos entre aplicaciones
 - Diferentes aplicaciones de software, ejecutadas sobre cualquier plataforma y desarrolladas en lenguajes de programación diferentes, pueden utilizar los servicios web para intercambiar datos
-- Existen dos principales formatos para el intercambio de datos:
-    - XML("eXtensive Markup Language")
-    - JSON("JavaScript Object Notation)
+- Existen dos principales **formatos para el intercambio de datos**:
+    - **XML**("eXtensive Markup Language")
+    - **JSON**("JavaScript Object Notation)
 
 - **Serialización** : es un proceso de codificación de un objeto con el fin de transmitislo a través de una conexión en red. Por ejmplo: la transformación de un diccionario de python a un JSON.
-- 
+
+### Tipos de Servicios web 
+- SOAP (Simple Access Protocol): permite la transimisión de datos en formato XML
+- REST (Representational State Transfer): es un tipo de arquitectura que se apoya en HTTP. Permite transmitir más tipos de datos(XML,JSON,Texto, etc), es más flexible y eficiente.
+  
