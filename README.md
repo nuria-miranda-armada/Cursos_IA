@@ -31,3 +31,9 @@ Para poder realizar web scraping lo que hacemos es:
 - SOAP (Simple Access Protocol): permite la transimisión de datos en formato XML
 - REST (Representational State Transfer): es un tipo de arquitectura que se apoya en HTTP. Permite transmitir más tipos de datos(XML,JSON,Texto, etc), es más flexible y eficiente.
   
+### Interfaces de programacion de aplicaciones(APIs)
+- Una API es un cojunto de reglas que establecen como utilizar en este caso, un servicio web.
+-  Cuando utilizamos una Api,  un programa crea un conjunto de servicios disponibles para que los usen otras aplicaciones y publica las APIs("reglas") que deben seguirse
+   para acceder a los servicios proporcionados por el programa, permitiendo que las aplicaciones se conecten, se comuniquen y compartan información.
+
+  
