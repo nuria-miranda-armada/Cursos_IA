@@ -12,6 +12,8 @@ Para poder realizar web scraping lo que hacemos es:
 - Una vez tengamosla información localizada información nos ayudaremos de las etiquetas y sus atributos para navegar por la página y sus elementos obteniendo la información que precisamos.
 - En caso de haber elementos sobrantes como simbolos de puntuacion y etc, haremos una limpieza de la información o elementos sobrantes, nos podemos servir de métodos como replace()
 - Finalmente cuando tengamos los datos en el formato que precisamos, podremos hacer las operaciones que precisemos sobre ellos.
+- También podremos ornarlos en una tabla con el uso de la librería pandas para mejorar su visualización 
+![Tabla para visualizar las palabras mas empleadas en un discurso](/images/salida_pantalla_extraccion_texto.png)
 
 ## Servicios Web y Apis
 
