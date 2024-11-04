@@ -9,7 +9,7 @@ Es la extracción de los datos significativos de una o varias paginas web determ
 Para poder realizar web scraping lo que hacemos es localizar en el archivo html de la página la información que nos interesaría extraer. Fijándonos en cuales son las etiquetas dentro de las cuales esa informacion está almacenada. 
 Una vez tengamos esa información usaremos las etiquetas para navegar por la página y sus elementos obteniendo la información que precisamos.
 
-#Servicios Web y Apis
+## Servicios Web y Apis
 
 - Un **servicio web** es una tecnologia que utiliza un conjunto de protocolos y estándares web que sirven para intercambiar datos entre aplicaciones
 - Diferentes aplicaciones de software, ejecutadas sobre cualquier plataforma y desarrolladas en lenguajes de programación diferentes, pueden utilizar los servicios web para intercambiar datos
