@@ -4,7 +4,9 @@ Empezamos con el curso de Web Scraping, comprobamos que tenemos instalado anacon
 El curso comienza haciendo un repaso básico de programación en python. 
 
 ## Que és Web Scraping y Web Crawling:
-Es la extracción de los datos significativos de una o varias paginas web determinadas para una manipulación o análisis posterior
+Es la extracción de los datos significativos de una o varias paginas web determinadas para una manipulación o análisis posterior.
+El **web scraping** consiste en la extracción de datos específicos de una página web (por ejemplo: contenido, tablas, imágenes, etc.),en cambio el **web crawling** 
+se centra específicamente en obtener los enlaces o URLs de múltiples páginas dentro de un sitio web para navegar y recopilar información general del sitio.
 
 Para poder realizar web scraping lo que hacemos es:
 
