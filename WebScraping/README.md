@@ -12,7 +12,7 @@ Para poder realizar web scraping lo que hacemos es:
 
 - localizar en el archivo html de la página la información que nos interesaría extraer.Examinando cuales son las etiquetas dentro de las cuales esa informacion está almacenada. 
 - Una vez tengamosla información localizada información nos ayudaremos de las etiquetas y sus atributos para navegar por la página y sus elementos obteniendo la información que precisamos.
-![Examinacion de html y busqueda de etiquetas](/images/localizacion_etiquetas.png)
+![Examinacion de html y busqueda de etiquetas](WebScraping/images/localizacion_etiquetas.png)
 - En caso de haber elementos sobrantes como simbolos de puntuacion y etc, haremos una limpieza de la información o elementos sobrantes, nos podemos servir de métodos como replace()
 - Finalmente cuando tengamos los datos en el formato que precisamos, podremos hacer las operaciones que precisemos sobre ellos.
 ![](/images/img3.png)
