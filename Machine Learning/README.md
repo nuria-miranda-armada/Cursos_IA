@@ -37,3 +37,14 @@ Existen diversas técnicas para conocer la dependencia o independencia entre var
 blanco y verde. Se cuantificaba el numero de insectos que quedaban atrapados
 
 - La hipoteisis es que todas las medias son iguales( las variables no están relacionadas)
+
+
+### CORRELACIÓN
+
+- Es la relación entre dos variables numéricas 
+- La forma visual de saber si están relacionadas son los gráficos de dispersión
+- Un valor alto de correlacion no nos asegura que la haya, depende tambien de la cantidad de datos.
+- Podemos comprobar la correlacion con un a funcion de R que es cor.test() que es mas fiable, nos devolverá un valor p 
+que al ifual que en los anteriores casos si es menor a 0.05 podemos asegurar con cierta fiabilidad que existe correlacion 
+entre las variables.
+
