@@ -48,3 +48,71 @@ blanco y verde. Se cuantificaba el numero de insectos que quedaban atrapados
 que al ifual que en los anteriores casos si es menor a 0.05 podemos asegurar con cierta fiabilidad que existe correlacion 
 entre las variables.
 
+Debemos recordar que la correlación no implica necesariamente causalidad.
+
+Para visualizacion de datos tenemos librerias como esta libreria: https://plot.ly/r
+
+## Machine Learning
+
+- El **machine learning** es un conjunto de algoritmos capaces de identificar y aprender patrones en datos para realizar predicciones
+- **Big Data** alamacenamiento y procesado de grandos volúmenes de datos.
+- **Data Mining** o Mineria de datos: Extraer el valor de los datos
+- **Inteligencia Artificial**: resolver problemas mediante máquinas, mejorando al ser humano
+- **Deep Learning**: algoritmos que funcionan de forma similar al cerebro humano a través de redes neuronales
+
+Un ejemplo de Machine learning seria entrenar a un algoritmo para que distinga los diferentes sonidos que emiten los animales,
+y en base a ello, pueda clasificar a que animal corresponde cada sonido.
+
+Usaremos machine learning cuando no se pueden obtener fácilmente las ecuaciones que resuelven nuestro problema.
+
+
+
+
+## Ténicas de Machine Learning
+
+- Aprendizaje supervisado: necesitan saber a que corresponde cada ejemplo, cada dato debe tener una etiqueta.
+    - Clasificación:
+    - Regresión: 
+- Aprendizaje no supervisado: le pedimos al algoritmo que nos encuentre patrones o etiquetas para clasificar los datos
+-Aplicaciones del ML:
+    - Reconocimiento de imágenes
+    - Filtros sw spam
+    - Detección de fraude
+    - Recomendaciones de productos
+    - Diagnósticos médicos
+    - Personalización web
+    - Reconocimiento de voz
+    - Optimizacion de precios 
+    - Fugas y cross-selling
+    - Segmentación de clientes
+    - Demanda de energía
+    - Etc
+
+### Algoritmos de Machine Learning
+
+- Regresion Lineal
+-Regresion Logística
+-árboles de decisión
+-Random Forest
+-XGBoost
+-Redes Neuronales
+
+
+Para desarrollar un modelo precisamos:
+1. Entender y definir el problema
+2. Recopilar datos
+3. Preparar los datos ( Limpieza, valores atípicos, transformacionse)
+4. Dividir los datos (entrenamiento, validación y test)
+5. Entrenar uno o varios modelos
+6. Medir el desempeño
+
+#### Overfitting y Underfitting
+A la hora de entrenar un modelo simpre surge un conflicyoentre generalización y Optimizacion
+Optimizacion es el proceso de ajuste de un modelo para conseguir el mejor rendimiento posible de los datos de entrenamiento (proceso de aprendizaje).
+Generalización es cómo de bien se comporta el modelo ante datos no procesados aún. El objetivo es conseguir la mejor capacidad de generalización
+EL modelo comienza a estar sobre-ajustado o "overfitted" cuando ha aprendido tan bien los datos de entrenamiento, que memoriza pautas que son demasiado
+especificas de los datos de entrenamiento e irrelevantes para los nuevos datos. Cuanto mas optimice con datos de entrenamiento, 
+menos va a poder generalizar con modelos que no ha visto nunca
+
+### Regresion Lineal
+
