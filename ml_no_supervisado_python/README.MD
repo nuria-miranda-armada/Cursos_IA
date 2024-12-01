@@ -1,4 +1,4 @@
-#ML no supervisado
+# ML no supervisado
 
 - La diferencia entre "supervisado" y "no supervisao" es que no tenemos un
 target especifico.
