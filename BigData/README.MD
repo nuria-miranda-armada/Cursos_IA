@@ -41,4 +41,41 @@ y con cualquier cantidad
 - Se dice que a dia de hoy el dato es el nuevo oro  
 - Comienza  a ponerse en relevancia el hecho de que cuando una plataforma es de uso gratuito lo pagas con tus datos, tu
 privacidad "el producto eres tu"
+- Big data no requiere únicamente de perfiles informáticos, llegan a aparecer nuevos perfiles no técnicos en torno a 
+los datos. 
+- Aparecen nuevos perfiles tecnicos como los de :
+    - Analista de datos/Data scientist
+    - Dearrollador / Data Engineer
+    - Adminsitradir / Big Data Sysadmin
 
+## Plataforma Big Data
+
+- Un cluster es un conjunto de servidores que trabajan coordinados. Existen muchos tipos de cluster, según el producto
+que lo conforme.
+- En Big Data tendremos un cluster Hadoop.
+- Los tipos de servidores de un cluster:
+        - Maestros(Masters) -> coordinan el cluster
+        - Trabajadores(Workers) -> alojan y procesan los datos
+        - Ingesta(Gateway o EdeNodes) -> conexión del cluster con el exterior, son la puerta de enlace.
+        - Utilidades (UtilityNodes) -> servicios adicionales, gestion de calves, servicio de seguridad, 
+        base de datos relacional, monitorizacion, etc.
+- Ampliar el número de Workers amplían el procesamiento y el almacenamiento del cluster.
+- Big Data se monta sobre un cluser o plataforma de servidores, cada servidor va tener una finalidad u otra.
+- Big Data no solo es Hadoop. Hay una serie de tecnologias relacionadas con el mundo big data que auqnue se puedan integrar
+con Hadoop no son Hadoop.
+- una plataforma Big Data engloba diferentes tecnologías y se puede considerar un conjunto de capas.
+- Un cluster Haddop es el core de una plataforma big data. 
+- Identificar las capas de un proyecto big data e identificar los componenetes que hay en cada una de las capas, nos va permitir
+entender mejor el funcionamiento de la plataforma, de sus componentes e identificar que cosas son necesarias, y al llegar un 
+componente nuevo podremos ubicarlo.
+- Capas de una plataforma Big Data:
+    - **Origenes de datos**: aqui tenemos todas las fuentes que van a ser susceptibles de generar datos para trabajar
+    - **Ingesta**: componentes que nos van a servr para coger lso datos de la fuente y meter los datos en nuestra plataforma  
+    - **Almacenamiento**: el datos debe ser almacenado de alguna manera, para extraer la informacion, o para almacenar un historico.
+    - **Analítica/Procesamiento**: Esta capa permite transformar, extarer, refinar el dato, enriquecerlo etc...
+    - **Explotación**: se peude extraer el grafico a traves de reportes, a traves de informes, o de gráficos.
+    -**Administración**: la capa que va a dar soporte a todo, herramientas de gestion y coordinacion de todos los componentes sofware,
+    Dentro de adminsitración tenemos la capa de seguridad, encriptacion y ocultacionde datos para garantizar la seguridad, controlar el 
+    acceso.
+
+## Hodoop: Core Tecnológico de Big Data
