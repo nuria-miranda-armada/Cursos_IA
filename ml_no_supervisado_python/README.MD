@@ -212,17 +212,17 @@ categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a
       - Debido a la complejoidad, tenemos mas opciones a la hota de entrenar pero el resultado se puede 
       utilizar de la misma forma.
 
-   ## Casos de uso de reduccion de dimensiones
-    - Al igual que en la clusterización, podemos aprovechar la reducción de dimensiones para identificar grupos 
+## Casos de uso de reduccion de dimensiones
+- Al igual que en la clusterización, podemos aprovechar la reducción de dimensiones para identificar grupos 
     de interés
-    - A nivel alto hemos visto que podemos visualizar los datos y podemos observando los grupso de puntos ver 
+- A nivel alto hemos visto que podemos visualizar los datos y podemos observando los grupso de puntos ver 
     que tienen algo en comun.
-    - Lo mas interisante quiza sea que podemso aprovechar los algoritmos de clusterización mara mejorar los resultados
-    - Podemos incorporar los resultados en otros modelos
-    - Podemos utilizar las dimensiones reducidas directamente en un modelo supervisado.
-    - En esencia, optamos por utilizar los componentes principales en vez de todas las variables disponibles.
-    - Ligeramente diferente a utilizar clusteres ya que no recogemos información de similaridad entre grupos.
-    En los clusteres ya asumimos e interpretamos que hay cierto sentido en los grupos, sin embargo en este 
+- Lo mas interisante quiza sea que podemso aprovechar los algoritmos de clusterización mara mejorar los resultados
+- Podemos incorporar los resultados en otros modelos
+- Podemos utilizar las dimensiones reducidas directamente en un modelo supervisado.
+- En esencia, optamos por utilizar los componentes principales en vez de todas las variables disponibles.
+- Ligeramente diferente a utilizar clusteres ya que no recogemos información de similaridad entre grupos.
+- En los clusteres ya asumimos e interpretamos que hay cierto sentido en los grupos, sin embargo en este 
     caso es mas bien una representacion distinta de los datos.
 
 
