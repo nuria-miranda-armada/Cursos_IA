@@ -152,27 +152,27 @@ categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a
 
    ### Clusterización jerárquica
 
-   - Es un tipo de clusterizacion que va dividendo de forma progresiva los datos en grupos
-   - La implementación en sklearn unifica parejas de datos, formando grupos de "abajo/arriba"
+- Es un tipo de clusterizacion que va dividendo de forma progresiva los datos en grupos
+- La implementación en sklearn unifica parejas de datos, formando grupos de "abajo/arriba"
    (agglomerative vs divisive)
-   - Muy fáciles de visualizar e interpretar gracias al famoso "dendogram" y su estructura de árbol
-   - Ahora tenemos diferentes consideraciones para los datos
-   - Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
+- Muy fáciles de visualizar e interpretar gracias al famoso "dendogram" y su estructura de árbol
+- Ahora tenemos diferentes consideraciones para los datos
+- Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
    fit_predict(X)
-   - Hay alguna tecnica que se utiliza en la que se corta el dendoframa y simplemente se pinta la parte en la que 
+- Hay alguna tecnica que se utiliza en la que se corta el dendoframa y simplemente se pinta la parte en la que 
    vemos la distancia de los clusteres. Porque realmente si queremos unos clusters con una similitud determinada, 
    sabemos que a mas similitud mayor proximidad de clusteres
-   - De las ventajas mas importantes es que podemos aprovechar mejor diferentes tipos de datos especialmente 
+- De las ventajas mas importantes es que podemos aprovechar mejor diferentes tipos de datos especialmente 
    las categórixas
    
    ## Casos de uso de clusterización
-      - Uno de los usos principales de la clusterización es la detección de grupos de interés
-      - Em pezamos construyendo clusters con las variables de interes u hacemos un análisis a posterior
-      para enternder los comportamientos que captamos
-      - Podemos incorporar estos grupos en procesos de negocio
-      - Si somos capaces de detectar grupos de interes, grupos de comportamientos comunes, podemos usar
-      estros resultados en modelso supervisados, en modelos predictivos
-      -Esto es muy útil si los datos tienen muchas dimensiones y si queremos facilitar la interpretación
+- Uno de los usos principales de la clusterización es la detección de grupos de interés
+- Em pezamos construyendo clusters con las variables de interes u hacemos un análisis a posterior
+  para enternder los comportamientos que captamos
+- Podemos incorporar estos grupos en procesos de negocio
+- Si somos capaces de detectar grupos de interes, grupos de comportamientos comunes, podemos usar
+  estros resultados en modelso supervisados, en modelos predictivos
+- Esto es muy útil si los datos tienen muchas dimensiones y si queremos facilitar la interpretación
       de los resultados. 
 
    ## Reducción de simensiones:
