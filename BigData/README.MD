@@ -20,3 +20,25 @@ realizar este proceso, y aumentara el "cuello de botella"
 Big Data tambien es computacion distribuida y almacenamiento distribuido
 La clave de Big Data es la localizacion del dato, que basicamente consiste en que vamos a llevar el procesamiento
 allá donde está e dato, el procesamiento se hace en la maquina que esta almacenado el dato ye l resultado tambien.
+
+Las ventajas de Big Data se suelen resumir en 3 Vs:
+
+- **Volumen**: El almacenamiento se hace en la propia maquina en si, a mas servidores mas almacenamiento vamos a tener,
+en Big Datapodemos llevar a crecer sin limites, se empiezan a cver tamaños de TeraBytes, PetaBytes, Exabytes.
+El numero de servidores va a ser casi ilimitado y por tanto tambien el almacenamiento. Big data es capaz de almacenar y 
+procesar una cantidad ingente de datos.
+- **Velocidad**: La limitacion anteriormente tambien estaba en el procesamiento, antes se procesaba por bloques lo  conocido
+como batch processing. Cin Bug Data aparece el concepo de streamming, streamming significa procesar el dato en  "Real Time"
+es decir procesarlo segun llega.
+- **Variabilidad**: Big data puede procesar cualquier dato desde datos estructurados ( una tabla en base de datos que sabmeos el dato,
+ lo camposy la estructurados),semi-structurado ( un documento json, del que conozco la estructura pero me puede varia el contenido),
+desedctruturado,  como un tweet, una imagen. Todo elemento que genere datos es una fuente de datos para big data.
+
+## Big Data y el Negocio
+
+- Gracias a las ·vs de Big Data,los negocios pueden jugar con lso datos, con cualquier tipode  dato, en cualquier momento,
+y con cualquier cantidad
+- Se dice que a dia de hoy el dato es el nuevo oro  
+- Comienza  a ponerse en relevancia el hecho de que cuando una plataforma es de uso gratuito lo pagas con tus datos, tu
+privacidad "el producto eres tu"
+

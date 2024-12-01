@@ -23,17 +23,20 @@ Tambien podremos cargar datos de archivoss csv, de paginas web y de otras fuente
      - cuando queremos crear nuevas consultas
 
 ### Proyecto final 
-Para elaborar el proyecto final haremos la conexion xon el sql server, y seleccionaremos import query,
+Para elaborar el proyecto final haremos la conexion con el sql server, y seleccionaremos import query,
 es la opcion de importación que volvará una copia de todos los datos a Power BI y nos permitirá 
 operar sin restricciones porque los datos estarán dentro de Power BI.
 ![tablas](/imagenes/sales_loas.png)
 
 ![tablas cargadas](imagenes/tables_loaded.png)
 
-También haremos una limpieza de datps, eliminando los que no necesitamos, lo haremos con edit query.    
+También haremos una limpieza de datps, eliminando los que no necesitamos, lo haremos con edit query. 
+Eliminaremos las columnas que no vamso a utilizar. En caso de duda podemos dejar la columna y eliminarla
+mas adelante, el metodo de edit query lo permite. 
+
 ![Borrado columnas](imagenes/remove_columns.png)
 
-Comprobamos las relaciones entre tablas:
+Comprobamos las relaciones entre tablas (esta es la relacion que ya viene definida por la BD):
 ![Relacion entre tablas](imagenes/relaciones_tablas.png)
 
 Ahora crearemos un calendar pero para ello usaremos la  variable OrderDate de la tabla SalesOrderHeader,
@@ -42,21 +45,28 @@ segun los rgistros de la tabla
 
 ![Calendar](imagenes/calendar_creation.png)
 
+
 Tras crear la tabla Calendario la enlazaremos con la tabla SalesOrderHeader por la variable OrderDate:
 
 ![relacion tablas](imagenes/new_relationship.png)
 ![comprobacion relacion tablas](imagenes/comprobacion_relationship.png)
 
-Crearemos la columna Sales y la columna UnitCost
+Crearemos la columna Sales y la columna UnitCost, tambien crearemos la columna Sales Cost.
 
 Todas las columnas se crean siguiendo el mismo procedimiento
+
 - Creacion de la columna Sales:
 ![comprobacion relacion tablas](imagenes/creacion_sales.png)
 
+- Comprobación de la creación de las columnas
+![columnas creadas](imagenes/imagenes/columnas_creadas.png)
 
 Una vez creadas las columnas podremos crear nuestro diseño de dashboard.
+
 Nos ayudaremos de los filtros para mostrar los datos que nos interesan, como por ejemplo los datos por paises,
-por continentes y etc
+por continentes y etc. 
+Filtraremos los datos que queremos mostrar, y la relacion entre ellos a nivel visualizacion( porque al marcar
+segun que casillas visuales visualizo unis datos u otros) viene determinada por las relaciones entre tablas.
 
 ![aplicamos filtro](imagenes/aplicamos_filtro.png)
 ![caplicamos filtro](imagenes/aplicamos_filtro2.png)
