@@ -47,7 +47,7 @@ Para comenzar a trabajar deberemos de importar pandas y numpy.
     
     Podremos leer archivos de csv con metodos como pd.read_csv()
 
-    ![Lectura archivo csv](/imagenes/pd.read_csv.png")
+    ![Lectura archivo csv](imagenes/pd.read_csv.png")
     metodos como el data.head(2) nos permitiran obtener los primeros elementos de un archivo cvs 
     
 
