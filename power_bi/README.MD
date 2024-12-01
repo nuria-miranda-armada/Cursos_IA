@@ -54,8 +54,9 @@ Todas las columnas se crean siguiendo el mismo procedimiento
 ![comprobacion relacion tablas](imagenes/creacion_sales.png)
 
 
-Una vez creadas las preguntas podremos crear nuestro diseño de dashboard.
-Nos ayudaremos de los filtros para mostrar los datos que nos interesan.
+Una vez creadas las columnas podremos crear nuestro diseño de dashboard.
+Nos ayudaremos de los filtros para mostrar los datos que nos interesan, como por ejemplo los datos por paises,
+por continentes y etc
 
 ![aplicamos filtro](imagenes/aplicamos_filtro.png)
 ![caplicamos filtro](imagenes/aplicamos_filtro2.png)
