@@ -114,5 +114,5 @@ EL modelo comienza a estar sobre-ajustado o "overfitted" cuando ha aprendido tan
 especificas de los datos de entrenamiento e irrelevantes para los nuevos datos. Cuanto mas optimice con datos de entrenamiento, 
 menos va a poder generalizar con modelos que no ha visto nunca
 
-### Regresion Lineal
+
 
