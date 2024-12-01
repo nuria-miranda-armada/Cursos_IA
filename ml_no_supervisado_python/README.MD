@@ -186,8 +186,9 @@ categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a
             - La significancia de los resultados se reduce porque hay que compersar.
             - Los algoritmos son mas lentos en converger. 
 
-      ### PCA 
       
+### PCA 
+     
       - El análisis de componentes principales o PCA es el algoritmo más clásico y busca expresar el conjunto
       de datos en una serie de vectores (componentes) que representan la gran mayoría de la varianza 
       que existen. 
