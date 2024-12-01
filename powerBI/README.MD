@@ -26,7 +26,8 @@ Tambien podremos cargar datos de archivoss csv, de paginas web y de otras fuente
 Para elaborar el proyecto final haremos la conexion con el sql server, y seleccionaremos import query,
 es la opcion de importación que volvará una copia de todos los datos a Power BI y nos permitirá 
 operar sin restricciones porque los datos estarán dentro de Power BI.
-![tablas](/imagenes/sales_loas.png)
+
+![tablas](imagenes/sales_loas.png)
 
 ![tablas cargadas](imagenes/tables_loaded.png)
 
