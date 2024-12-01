@@ -28,7 +28,7 @@ es la opcion de importación que volvará una copia de todos los datos a Power B
 operar sin restricciones porque los datos estarán dentro de Power BI.
 ![tablas](/imagenes/sales_loas.png)
 
-![tablas cargadas](/imagenes/tables_loaded.png)
+![tablas cargadas](imagenes/tables_loaded.png)
 
 También haremos una limpieza de datps, eliminando los que no necesitamos, lo haremos con edit query.    
 ![Borrado columnas](/imagenes/remove_columns.png)
