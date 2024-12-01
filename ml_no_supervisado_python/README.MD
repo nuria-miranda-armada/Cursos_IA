@@ -94,78 +94,78 @@ entrenamiento.
 
     -Davies bouldin
 
-    ### Preparacion de datos
+### Preparacion de datos
 
-    - El requisito básico es que los datos deben de ser numéricos
+- El requisito básico es que los datos deben de ser numéricos
     
-    - Preferimos trabajas con variables continuas, las variables cartegóricas
+- Preferimos trabajas con variables continuas, las variables cartegóricas
     pueden producir resultados extraños
 
-    -El pipeline de sklearn es una erramienta fundamental para mejorar el proceso
+-El pipeline de sklearn es una erramienta fundamental para mejorar el proceso
      de preapraracion
     
-    - El "pipeline" es una manera felexible de crear "flujos" de diferentes pasos de 
+- El "pipeline" es una manera felexible de crear "flujos" de diferentes pasos de 
     preparacion que luego podemos optimizar y ejecutar sobre nuevos datos.
 
-    -El "Pipeline" es ima seroe de "pasos" con nombres y cada "paso" tiene un nombre,
-    y cada paso es una operacion que vamos a hacer sobre los datos a la hora de ejecutar
-    el pipeline
+-El "Pipeline" es ima seroe de "pasos" con nombres y cada "paso" tiene un nombre,
+y cada paso es una operacion que vamos a hacer sobre los datos a la hora de ejecutar
+el pipeline
  
-     - Al elegir las variables hay que tener en cuenta que kmeans es muy sensible a los
-     datos, debemos taambien buscar variables con poca correlación entre ellas.
-     - Generalmente las variables deben de ser continuas (sin muchos outliers)
-     - En caso de que sea muy importante utilizar variables categórixas, existen
-     adaptaciones a kmeans(kmodes,kprototype)
+- Al elegir las variables hay que tener en cuenta que kmeans es muy sensible a los
+  datos, debemos taambien buscar variables con poca correlación entre ellas.
+- Generalmente las variables deben de ser continuas (sin muchos outliers)
+- En caso de que sea muy importante utilizar variables categórixas, existen
+  adaptaciones a kmeans(kmodes,kprototype)
 
-     - La normalizacion es un paso fundamental ya que kemans depende de distancias, entonces
-     es fundamental que las variables esten en la misma escala.
+- La normalizacion es un paso fundamental ya que kemans depende de distancias, entonces
+  es fundamental que las variables esten en la misma escala.
 
-     -Kmeans explota la distancia entre mpuntos y si las variables tienen dimensiones diferentes 
-     las distancias no son comparables
+- Kmeans explota la distancia entre mpuntos y si las variables tienen dimensiones diferentes 
+  las distancias no son comparables
 
-     - Existen varias maneras de normalizar, pero es muy importante aprovechar los 
-     pipelines para crear procesos mejores
+- Existen varias maneras de normalizar, pero es muy importante aprovechar los 
+  pipelines para crear procesos mejores
 
-     - El metodo StandardScaler(), coge por ejemplo una en la que tenemos rangos bastante
-      distintos. Funciona como si fuera un tipo de modelo, primero lo declaramos y hacemos un 
-      fit sobre nuestros datos, buscara los parametros y numeros para hacer el fit sobre el 
-      standarscaler y si lo alamcenamos y lo tenemos contenido en un objeto podremos aplicarlo
-      a unos datos nuevos, externos sin tener que tocarlos
+- El metodo StandardScaler(), coge por ejemplo una en la que tenemos rangos bastante
+  distintos. Funciona como si fuera un tipo de modelo, primero lo declaramos y hacemos un 
+  fit sobre nuestros datos, buscara los parametros y numeros para hacer el fit sobre el 
+  standarscaler y si lo alamcenamos y lo tenemos contenido en un objeto podremos aplicarlo
+  a unos datos nuevos, externos sin tener que tocarlos
 
      
 con Kmeans tenemos que decicir cuantos grupos existen y se prefieren variables continuas ante 
 categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a continuacion
 
 
-   ### DBSCAN
-   Si tenemos una masa de puntos que hay que buscar el algoritmo va a buscar donde
-   estan los puntos mas densos y si cumple con los requisitos de densidad, va a decidir que ahi 
-   hay un cluster,no hace falta especificar el numero de clusteres que hay.
-   - Algoritmo que busca zonas de alta densidad de puntos sin especificar cuantas "zonas " 
-    tienen que existir
-   - Definimos las zonas de alta densidad con el numero minimo de puntos y la distancia maxima de los puntos
-   - Escalabilidad similar a kmeans, las restriccion anicel datos son similares a Kmeans.
-   - No agrupa "todos" los puntos, a veces hay puntos que no pertenecen a ningun grupo, poerque no cumplen con ningun requisito,
-   el algoritmo es capaz de identificar los puntos que no pertenecen a ninigun grupo 
-   - Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
-   fit_predict(X)
+### DBSCAN
+Si tenemos una masa de puntos que hay que buscar el algoritmo va a buscar donde
+estan los puntos mas densos y si cumple con los requisitos de densidad, va a decidir que ahi 
+hay un cluster,no hace falta especificar el numero de clusteres que hay.
+- Algoritmo que busca zonas de alta densidad de puntos sin especificar cuantas "zonas " 
+  tienen que existir
+- Definimos las zonas de alta densidad con el numero minimo de puntos y la distancia maxima de los puntos
+- Escalabilidad similar a kmeans, las restriccion anicel datos son similares a Kmeans.
+- No agrupa "todos" los puntos, a veces hay puntos que no pertenecen a ningun grupo, poerque no cumplen con ningun requisito,
+  el algoritmo es capaz de identificar los puntos que no pertenecen a ninigun grupo 
+- Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
+  fit_predict(X)
 
-   ### Clusterización jerárquica
+### Clusterización jerárquica
 
 - Es un tipo de clusterizacion que va dividendo de forma progresiva los datos en grupos
 - La implementación en sklearn unifica parejas de datos, formando grupos de "abajo/arriba"
-   (agglomerative vs divisive)
+  (agglomerative vs divisive)
 - Muy fáciles de visualizar e interpretar gracias al famoso "dendogram" y su estructura de árbol
 - Ahora tenemos diferentes consideraciones para los datos
 - Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
    fit_predict(X)
 - Hay alguna tecnica que se utiliza en la que se corta el dendoframa y simplemente se pinta la parte en la que 
-   vemos la distancia de los clusteres. Porque realmente si queremos unos clusters con una similitud determinada, 
-   sabemos que a mas similitud mayor proximidad de clusteres
+  vemos la distancia de los clusteres. Porque realmente si queremos unos clusters con una similitud determinada, 
+  sabemos que a mas similitud mayor proximidad de clusteres
 - De las ventajas mas importantes es que podemos aprovechar mejor diferentes tipos de datos especialmente 
-   las categórixas
+  las categórixas
    
-   ## Casos de uso de clusterización
+### Casos de uso de clusterización
 - Uno de los usos principales de la clusterización es la detección de grupos de interés
 - Em pezamos construyendo clusters con las variables de interes u hacemos un análisis a posterior
   para enternder los comportamientos que captamos
@@ -175,16 +175,16 @@ categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a
 - Esto es muy útil si los datos tienen muchas dimensiones y si queremos facilitar la interpretación
       de los resultados. 
 
-   ## Reducción de simensiones:
+### Reducción de simensiones:
 
    
-    - Queremos reducir las dimensiones porque la alta dimensionalidad puede ser problemática por 
-      varios motivos:
-    - Es dificil extraer conocimiento concreto
-    - Los modelos supervisados que son entrenados con muchas dimensiones son
-     propensos a tenr overfitting.
-    - La significancia de los resultados se reduce porque hay que compersar.
-    - Los algoritmos son mas lentos en converger. 
+- Queremos reducir las dimensiones porque la alta dimensionalidad puede ser problemática por 
+  varios motivos:
+- Es dificil extraer conocimiento concreto
+- Los modelos supervisados que son entrenados con muchas dimensiones son
+propensos a tenr overfitting.
+- La significancia de los resultados se reduce porque hay que compersar.
+- Los algoritmos son mas lentos en converger. 
 
       
 ### PCA 
