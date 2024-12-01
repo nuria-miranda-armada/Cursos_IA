@@ -15,6 +15,4 @@ En este tipo de graficos necesitaremos rellenar los valores que van en el Eje X
 y los valores que van en el eje Y.
 Por defecto en matplotlib si no establecemos que se use otra figura,
 se usaran las lineas
-
 ![Imagen grafica primera prueba](../imagenes/lineas_matplotlib.png)
-
