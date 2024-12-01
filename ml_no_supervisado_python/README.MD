@@ -133,17 +133,97 @@ entrenamiento.
       a unos datos nuevos, externos sin tener que tocarlos
 
      
-
-con Kmeans tenemos que decicir cuantos grupos existen y se prefieren variables continuas ante
+con Kmeans tenemos que decicir cuantos grupos existen y se prefieren variables continuas ante 
 categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a continuacion
 
 
-      ## DBSCAN
-       - Algorutmo que busca zonas de alta densidad de puntos sin especificar cuantas "zonas " 
-       tienen que existir
-       - Los parámetros claves son los que definen los que es la "alta densidad"
-       - Escalabilidad similar a kmeans
-       - No agrupa "todos" los puntos
+   ### DBSCAN
+   Si tenemos una masa de puntos que hay que buscar el algoritmo va a buscar donde
+   estan los puntos mas densos y si cumple con los requisitos de densidad, va a decidir que ahi 
+   hay un cluster,no hace falta especificar el numero de clusteres que hay.
+   - Algoritmo que busca zonas de alta densidad de puntos sin especificar cuantas "zonas " 
+    tienen que existir
+   - Definimos las zonas de alta densidad con el numero minimo de puntos y la distancia maxima de los puntos
+   - Escalabilidad similar a kmeans, las restriccion anicel datos son similares a Kmeans.
+   - No agrupa "todos" los puntos, a veces hay puntos que no pertenecen a ningun grupo, poerque no cumplen con ningun requisito,
+   el algoritmo es capaz de identificar los puntos que no pertenecen a ninigun grupo 
+   - Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
+   fit_predict(X)
+
+   ### Clusterización jerárquica
+
+   - Es un tipo de clusterizacion que va dividendo de forma progresiva los datos en grupos
+   - La implementación en sklearn unifica parejas de datos, formando grupos de "abajo/arriba"
+   (agglomerative vs divisive)
+   - Muy fáciles de visualizar e interpretar gracias al famoso "dendogram" y su estructura de árbol
+   - Ahora tenemos diferentes consideraciones para los datos
+   - Dtos a tener en cuenta: no tiene una metologia de metodos fit y predict separados, es el metodo
+   fit_predict(X)
+   - Hay alguna tecnica que se utiliza en la que se corta el dendoframa y simplemente se pinta la parte en la que 
+   vemos la distancia de los clusteres. Porque realmente si queremos unos clusters con una similitud determinada, 
+   sabemos que a mas similitud mayor proximidad de clusteres
+   - De las ventajas mas importantes es que podemos aprovechar mejor diferentes tipos de datos especialmente 
+   las categórixas
+   
+   ## Casos de uso de clusterización
+      - Uno de los usos principales de la clusterización es la detección de grupos de interés
+      - Em pezamos construyendo clusters con las variables de interes u hacemos un análisis a posterior
+      para enternder los comportamientos que captamos
+      - Podemos incorporar estos grupos en procesos de negocio
+      - Si somos capaces de detectar grupos de interes, grupos de comportamientos comunes, podemos usar
+      estros resultados en modelso supervisados, en modelos predictivos
+      -Esto es muy útil si los datos tienen muchas dimensiones y si queremos facilitar la interpretación
+      de los resultados. 
+
+   ## Reducción de simensiones:
+
+   
+      - Queremos reducir las dimensiones porque la alta dimensionalidad puede ser problemática por 
+      varios motivos:
+            - Es dificil extraer conocimiento concreto
+            - Los modelos supervisados que son entrenados con muchas dimensiones son
+            propensos a tenr overfitting.
+            - La significancia de los resultados se reduce porque hay que compersar.
+            - Los algoritmos son mas lentos en converger. 
+
+      ### PCA 
+      
+      - El análisis de componentes principales o PCA es el algoritmo más clásico y busca expresar el conjunto
+      de datos en una serie de vectores (componentes) que representan la gran mayoría de la varianza 
+      que existen. 
+      - Por ejemplo en vez de dibujar nuestro gráfico en 10 dimensiones vamos a ver si lo podemos dibujar en dos.
+      Estas dos dimensiones serian "inventadas" no pertenecen a las dimensiones originales y representan un poco mejor la
+      varianza que hay.
+      - De esta forma es como resumir los datos y al mismo tiempo reducir el ruido. Podremos visualizar 
+      estos resultados de forma facil o usarlo en otro analisis
+      - El PCA se utiliza de manera similar a los algoritmos anteriores.
+      - Sklearn nos proporciona varias maneras de evaluar el restultado y otra vez explota los métodos de
+      "fit" y "trasnsform"
+
+      ### T-SNE
+
+      - PCA aunque es muy popular no es perfecto. Sus debilidades tienen que ver como realmente captura las 
+      diferentes estructuras de los datos y como luego los expresa.
+      - Los aloritmos t-SNE y UMAP son alternativas más anazadas a PCA y tambien bastante populares. Ambos
+      son técnicas que realmente son técnicas visuales, los que hacen mejor que PCA es que consiguen resumir
+      las diferentes geometrías de los datos de forma un poco mejor.
+      - Se suele recomendar aplicar un PCA(puede ser de mas dimensiones de lo normal) antes de aplicar t-SNE 
+      y UMAP para que puedan converger ( para que se puedan ejecutar bien).
+      - Debido a la complejoidad, tenemos mas opciones a la hota de entrenar pero el resultado se puede 
+      utilizar de la misma forma.
+
+   ## Casos de uso de reduccion de dimensiones
+    - Al igual que en la clusterización, podemos aprovechar la reducción de dimensiones para identificar grupos 
+    de interés
+    - A nivel alto hemos visto que podemos visualizar los datos y podemos observando los grupso de puntos ver 
+    que tienen algo en comun.
+    - Lo mas interisante quiza sea que podemso aprovechar los algoritmos de clusterización mara mejorar los resultados
+    - Podemos incorporar los resultados en otros modelos
+    - Podemos utilizar las dimensiones reducidas directamente en un modelo supervisado.
+    - En esencia, optamos por utilizar los componentes principales en vez de todas las variables disponibles.
+    - Ligeramente diferente a utilizar clusteres ya que no recogemos información de similaridad entre grupos.
+    En los clusteres ya asumimos e interpretamos que hay cierto sentido en los grupos, sin embargo en este 
+    caso es mas bien una representacion distinta de los datos.
 
 
 
