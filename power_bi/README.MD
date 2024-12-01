@@ -10,7 +10,7 @@ a los problemas que podamos tener diariamente en nuestras compañías.
 - En el caso de powe Bi en los primeros ejecicios lo que haremos sera cargar empleando SQL server, y esto tras establecer
 la conexion con el server y la base de datos, empleando el metodo import que pasa una copia de nuestra BD a Power BI, podemos seleccionar las tablas exactar que queremos cargar.
 
-![Imagencarga BD](/imagenes/carga_bd.png)
+![Imagencarga BD](imagenes/carga_bd.png)
 
 
 Tambien podremos cargar datos de archivoss csv, de paginas web y de otras fuentes de datos
@@ -31,32 +31,35 @@ operar sin restricciones porque los datos estarán dentro de Power BI.
 ![tablas cargadas](imagenes/tables_loaded.png)
 
 También haremos una limpieza de datps, eliminando los que no necesitamos, lo haremos con edit query.    
-![Borrado columnas](/imagenes/remove_columns.png)
+![Borrado columnas](imagenes/remove_columns.png)
 
 Comprobamos las relaciones entre tablas:
-![Relacion entre tablas](/imagenes/relaciones_tablas.png)
+![Relacion entre tablas](imagenes/relaciones_tablas.png)
 
 Ahora crearemos un calendar pero para ello usaremos la  variable OrderDate de la tabla SalesOrderHeader,
 ya que esto nos permitirá que la variable minima y la varible maxima sean dinamicas y se vayan actualizando 
 segun los rgistros de la tabla
 
-![Calendar](/imagenes/calendar_creation.png)
+![Calendar](imagenes/calendar_creation.png)
 
 Tras crear la tabla Calendario la enlazaremos con la tabla SalesOrderHeader por la variable OrderDate:
 
 ![relacion tablas](/imagenes/new_relationship.png)
-![comprobacion relacion tablas](/imagenes/comprobacion_relationship.png)
+![comprobacion relacion tablas](imagenes/comprobacion_relationship.png)
 
 Crearemos la columna Sales y la columna UnitCost
 
 Todas las columnas se crean siguiendo el mismo procedimiento
 - Creacion de la columna Sales:
-![comprobacion relacion tablas](/imagenes/creacion_sales.png)
+![comprobacion relacion tablas](imagenes/creacion_sales.png)
 
 
 Una vez creadas las preguntas podremos crear nuestro diseño de dashboard.
 Nos ayudaremos de los filtros para mostrar los datos que nos interesan.
 
-![aplicamos filtro](/imagenes/aplicamos_filtro.png)
-![caplicamos filtro](/imagenes/aplicamos_filtro2.png)
-![mostramos dashboard](/imagenes/dashboard.png)
+![aplicamos filtro](imagenes/aplicamos_filtro.png)
+![caplicamos filtro](imagenes/aplicamos_filtro2.png)
+![mostramos dashboard](imagenes/dashboard.png)
+
+Finalmente le daremos a Publish y podremos publicar nuestro dashboard en Power BI Service, 
+lo que nos permitirá llevar controles sobre metricas sobre quien visita la pagina, cuantas visitas tiene y etc
