@@ -44,7 +44,7 @@ segun los rgistros de la tabla
 
 Tras crear la tabla Calendario la enlazaremos con la tabla SalesOrderHeader por la variable OrderDate:
 
-![relacion tablas](/imagenes/new_relationship.png)
+![relacion tablas](imagenes/new_relationship.png)
 ![comprobacion relacion tablas](imagenes/comprobacion_relationship.png)
 
 Crearemos la columna Sales y la columna UnitCost
