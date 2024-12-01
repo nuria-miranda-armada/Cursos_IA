@@ -178,44 +178,44 @@ categñoricas. Pero existen otras tçécnicas de ML no superviasdo que veremos a
    ## Reducción de simensiones:
 
    
-      - Queremos reducir las dimensiones porque la alta dimensionalidad puede ser problemática por 
+    - Queremos reducir las dimensiones porque la alta dimensionalidad puede ser problemática por 
       varios motivos:
-            - Es dificil extraer conocimiento concreto
-            - Los modelos supervisados que son entrenados con muchas dimensiones son
-            propensos a tenr overfitting.
-            - La significancia de los resultados se reduce porque hay que compersar.
-            - Los algoritmos son mas lentos en converger. 
+    - Es dificil extraer conocimiento concreto
+    - Los modelos supervisados que son entrenados con muchas dimensiones son
+     propensos a tenr overfitting.
+    - La significancia de los resultados se reduce porque hay que compersar.
+    - Los algoritmos son mas lentos en converger. 
 
       
 ### PCA 
      
-      - El análisis de componentes principales o PCA es el algoritmo más clásico y busca expresar el conjunto
-      de datos en una serie de vectores (componentes) que representan la gran mayoría de la varianza 
-      que existen. 
-      - Por ejemplo en vez de dibujar nuestro gráfico en 10 dimensiones vamos a ver si lo podemos dibujar en dos.
-      Estas dos dimensiones serian "inventadas" no pertenecen a las dimensiones originales y representan un poco mejor la
-      varianza que hay.
-      - De esta forma es como resumir los datos y al mismo tiempo reducir el ruido. Podremos visualizar 
-      estos resultados de forma facil o usarlo en otro analisis
-      - El PCA se utiliza de manera similar a los algoritmos anteriores.
-      - Sklearn nos proporciona varias maneras de evaluar el restultado y otra vez explota los métodos de
-      "fit" y "trasnsform"
+- El análisis de componentes principales o PCA es el algoritmo más clásico y busca expresar el conjunto
+   de datos en una serie de vectores (componentes) que representan la gran mayoría de la varianza 
+   que existen. 
+- Por ejemplo en vez de dibujar nuestro gráfico en 10 dimensiones vamos a ver si lo podemos dibujar en dos.
+   Estas dos dimensiones serian "inventadas" no pertenecen a las dimensiones originales y representan un poco mejor la
+   varianza que hay.
+- De esta forma es como resumir los datos y al mismo tiempo reducir el ruido. Podremos visualizar 
+   estos resultados de forma facil o usarlo en otro analisis
+- El PCA se utiliza de manera similar a los algoritmos anteriores.
+- Sklearn nos proporciona varias maneras de evaluar el restultado y otra vez explota los métodos de
+   "fit" y "trasnsform"
 
-      ### T-SNE
+### T-SNE
 
-      - PCA aunque es muy popular no es perfecto. Sus debilidades tienen que ver como realmente captura las 
-      diferentes estructuras de los datos y como luego los expresa.
-      - Los aloritmos t-SNE y UMAP son alternativas más anazadas a PCA y tambien bastante populares. Ambos
-      son técnicas que realmente son técnicas visuales, los que hacen mejor que PCA es que consiguen resumir
-      las diferentes geometrías de los datos de forma un poco mejor.
-      - Se suele recomendar aplicar un PCA(puede ser de mas dimensiones de lo normal) antes de aplicar t-SNE 
-      y UMAP para que puedan converger ( para que se puedan ejecutar bien).
-      - Debido a la complejoidad, tenemos mas opciones a la hota de entrenar pero el resultado se puede 
-      utilizar de la misma forma.
+- PCA aunque es muy popular no es perfecto. Sus debilidades tienen que ver como realmente captura las 
+   diferentes estructuras de los datos y como luego los expresa.
+- Los aloritmos t-SNE y UMAP son alternativas más anazadas a PCA y tambien bastante populares. Ambos
+  son técnicas que realmente son técnicas visuales, los que hacen mejor que PCA es que consiguen resumir
+  las diferentes geometrías de los datos de forma un poco mejor.
+- Se suele recomendar aplicar un PCA(puede ser de mas dimensiones de lo normal) antes de aplicar t-SNE 
+  UMAP para que puedan converger ( para que se puedan ejecutar bien).
+- Debido a la complejoidad, tenemos mas opciones a la hota de entrenar pero el resultado se puede 
+  utilizar de la misma forma.
 
 ## Casos de uso de reduccion de dimensiones
 - Al igual que en la clusterización, podemos aprovechar la reducción de dimensiones para identificar grupos 
-    de interés
+   de interés
 - A nivel alto hemos visto que podemos visualizar los datos y podemos observando los grupso de puntos ver 
     que tienen algo en comun.
 - Lo mas interisante quiza sea que podemso aprovechar los algoritmos de clusterización mara mejorar los resultados
