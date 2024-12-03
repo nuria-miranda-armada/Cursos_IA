@@ -75,3 +75,5 @@ segun que casillas visuales visualizo unis datos u otros) viene determinada por 
 
 Finalmente le daremos a Publish y podremos publicar nuestro dashboard en Power BI Service, 
 lo que nos permitirá llevar controles sobre metricas sobre quien visita la pagina, cuantas visitas tiene y etc
+
+https://app.powerbi.com/view?r=eyJrIjoiYzRhN2JlNWUtMjMxYi00MTM2LWE2MjUtMjUwNTA2OWM3YTI4IiwidCI6ImE4ZTM1YzU4LWUzNGEtNDA0Mi1hYmZhLTBhOTMzYzA0YWZmNSJ9
